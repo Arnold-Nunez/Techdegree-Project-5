@@ -1,0 +1,62 @@
+
+%clearfix {
+  &:after{
+  content: "";
+  display: table;
+  clear: both;
+ }
+}
+
+//links
+
+%link {
+  text-decoration: none;
+  color: $turquoise-blue;
+  font-weight: $font-bold;
+}
+
+//images
+
+%logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+%frame {
+  border: 2px solid #e2ebed;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+%avatar {
+  align-self: center;
+  padding: 30px 0;
+}
+
+//headlines
+
+%hdln-prim {
+  margin-left: 20px;
+  color: $riptide;
+  font-weight: $font-bold;
+}
+
+%hdln-sec {
+  font-weight: $font-thin;
+  color: $grey;
+}
+
+//nav item
+
+%nav-item {
+  display: inline-block;
+  text-decoration: none;
+  color: $white;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}

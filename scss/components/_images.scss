@@ -1,0 +1,11 @@
+.img--logo {
+  @extend %logo;
+}
+
+.img--frame {
+  @extend %frame;
+}
+
+.img--avatar {
+  @extend %avatar;
+}

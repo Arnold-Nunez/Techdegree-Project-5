@@ -1,0 +1,28 @@
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.link {
+  @extend %link;
+}
+
+.blockquote {
+  width: 70%;
+  margin: 30px auto;
+  font-size: 1.35em;
+  font-style: italic;
+  border-left:8px solid $riptide;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+
+.headline--primary {
+  @extend %hdln-prim;
+}
+
+.headline--secondary {
+  @extend %hdln-sec;
+}

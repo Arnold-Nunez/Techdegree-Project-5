@@ -1,0 +1,23 @@
+//Forms
+
+.form{
+  @include flexbox();
+  @include flex-direction($direction);
+  margin-bottom: 40px;
+}
+
+.form__label--hidden {
+  display: none;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 5px solid $riptide;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  &:hover {
+    border-bottom: 5px solid $turquoise-blue;
+  }
+}

@@ -1,0 +1,51 @@
+//Font
+$font-thin: 100;
+$font-bold: 700;
+
+//breakpoints
+
+$brkpoint-sm  : 1px;
+$brkpoint-md  : 480px;
+$brkpoint-lg  : 1100px;
+
+//colors
+
+
+$white  : #fff;
+$black  : #000;
+$grey   : #808080;
+$riptide: #86e9c7;
+
+$turquoise-blue: #5ee2ed;
+$fern          : #63b76c;
+$valencia      : #d84437;
+$vermilion     : #ff4d00;
+$royal-purple  : #6b3fa0;
+
+$ui-colors: (
+  default: $turquoise-blue,
+  success: $fern,
+  error  : $valencia,
+  warning: $vermilion,
+  info   : $royal-purple,
+);
+
+// Grid colors
+$aquamarine    : #7FFFD4;
+$calypso       : #31728D;
+$turquoise-blue: #5ee2ed;
+$lavender      : #B57EDC;
+$moss-green    : #ADDFAD;
+$mojo          : #C04737;
+$crusta        : #F8783A;
+
+
+
+//grid
+
+$g-col-count   : 12;
+$g-col-width   : 65px;
+$g-gutter-width: 20px;
+
+//flexbox variables
+$direction: column;

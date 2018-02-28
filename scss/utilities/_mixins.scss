@@ -1,0 +1,56 @@
+// Media Queries
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (min-width: $brkpoint-md + 1) {
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media (min-width: $brkpoint-lg) {
+      @content;
+    }
+  }
+  @else {
+    @error "Whoops! No value could be retrieved for '#{$break}'.";
+  }
+}
+
+//flexbox settings
+
+@mixin flexbox() {
+  display: flex;
+}
+
+@mixin flex-direction($direction) {
+  flex-direction: $direction;
+}
+
+//Element and modifier BEM selectors
+
+.nav {
+  &__item {
+    @extend %nav-item;
+    a {
+      text-decoration: none;
+      font-size: 1.25em;
+    }
+    &:first-child {
+      background: #86e9c7;
+      color: $white;
+    }
+  }
+}
+
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+}
